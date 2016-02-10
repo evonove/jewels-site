@@ -57,3 +57,10 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# IDE
+.idea/
+
+# Wheelie and Gulp toolchain
+node_modules/
+vendors/
