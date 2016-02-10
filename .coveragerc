@@ -1,0 +1,8 @@
+[run]
+source = django-jewels
+omit =
+    */migrations/*
+    */tests/*
+    django-jewels/manage.py
+    django-jewels/jewels/wsgi.py
+    django-jewels/jewels/settings/production.py
