@@ -56,6 +56,8 @@ INSTALLED_APPS = (
     'modelcluster',
     'compressor',
     'taggit',
+
+    'home',
 )
 
 MIDDLEWARE_CLASSES = [
