@@ -1,0 +1,66 @@
+.splash {
+  background: linear-gradient(#acced9, #c3d6cd);
+  height: 100vh;
+  position: relative;
+}
+
+// All illustrations should have these declarations
+.splash-illustration > * {
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+
+.splash-illustration-logo {
+  background: url("../images/logo@x2.png") no-repeat 35% 20%;
+  z-index: 1000;
+}
+
+.splash-illustration-plant {
+  background: url("../images/plant@x2.png") no-repeat 5% 110%;
+  background-size: auto 60%;
+  z-index: 900;
+}
+
+.splash-illustration-hill {
+  background: url("../images/hill@x2.png") no-repeat 100% 50%;
+  background-size: 100% auto;
+  z-index: 800;
+}
+
+.splash-illustration-goblin {
+  background: url("../images/goblin@x2.png") no-repeat 100% 33vh;
+  background-size: 22% auto;
+  z-index: 700;
+}
+
+.splash-illustration-foreground-cloud-first {
+  background: url("../images/cloud4@x2.png") no-repeat 70% 65vh;
+  z-index: 600;
+}
+
+.splash-illustration-foreground-cloud-second {
+  background: url("../images/cloud5@x2.png") no-repeat 55% 55vh;
+  z-index: 600;
+}
+
+.splash-illustration-castle {
+  background: url("../images/castle@x2.png") no-repeat 59vw 5vh;
+  background-size: auto 100%;
+  z-index: 500;
+}
+
+.splash-illustration-background-cloud-third {
+  background: url("../images/cloud1@x2.png") no-repeat 90% 10vh;
+  z-index: 400;
+}
+
+.splash-illustration-background-cloud-fourth {
+  background: url("../images/cloud2@x2.png") no-repeat 15% 48vh;
+  z-index: 400;
+}
+
+.splash-illustration-background-cloud-fifth {
+  background: url("../images/cloud3@x2.png") no-repeat 30% 13vh;
+  z-index: 400;
+}
