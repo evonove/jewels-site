@@ -1,0 +1,30 @@
+// Button
+.button {
+  display: block;
+  margin: auto;
+  position: relative;
+  width: 300px;
+  z-index: 20;
+
+  // when adding a button, fill the 'content' value with the right text-link. Use the generic 'button' selector, along with the specific button selector
+  &::after {
+    background-color: #67c277;
+    content: '';
+    font: $text-button 'Le Grimoire du Bonheur', sans-serif;
+    height: 70%;
+    // line-height value should be the same of the height plus 10, and in pixel. These extra 10 pixels are needed to fix the extra space occupied by 'Le Grimoire du Bonheur' font.
+    line-height: 80px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    z-index: 10;
+  }
+}
+
+.orders-button-cornice {
+  position: relative;
+  width: 100%;
+  z-index: 30;
+}
