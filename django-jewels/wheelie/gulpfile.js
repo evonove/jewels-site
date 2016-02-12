@@ -10,14 +10,12 @@ wheelie.setDefault('watch');
 
 // build customizations
 var vendors = [
-    // put here your vendors installed via bower, npm, or whatever
-    // with a base PATH of `client/vendors/` folder
+    'svg-injector/dist/svg-injector.min.js'
 ];
 
 var scripts = [
-    // add here your JavaScript files
-    // with a base PATH of `client/js/` folder
     'app.js',
+    'svg-injections.js'
 ];
 
 wheelie.update('uglify', {
