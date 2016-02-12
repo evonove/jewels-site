@@ -1,0 +1,12 @@
+// Fonts
+// -----
+
+// Le Grimoire du Bonheur
+@font-face {
+  font-family: 'Le Grimoire du Bonheur';
+  src: local('Le Grimoire du Bonheur'),
+       url('../fonts/le_grimoire_du_bonheur/le_grimoire_du_bonheur.woff2') format('woff2'),
+       url('../fonts/le_grimoire_du_bonheur/le_grimoire_du_bonheur.woff') format('woff'),
+       url('../fonts/le_grimoire_du_bonheur/le_grimoire_du_bonheur.ttf.gz') format('ttf'),
+       url('../fonts/le_grimoire_du_bonheur/le_grimoire_du_bonheur.eot.gz') format('eot');
+}
