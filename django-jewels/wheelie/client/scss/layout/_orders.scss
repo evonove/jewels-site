@@ -1,0 +1,25 @@
+.orders {
+  background: radial-gradient(#811d22, #500e11);
+  padding: 10em 0;
+  text-align: center;
+
+}
+
+.button.orders-game-button::after {
+  content: 'Preorder';
+}
+
+.orders-game {
+  width: 75%;
+  margin: auto;
+
+  & > * {
+    margin: 29px auto 0;
+  }
+}
+
+.orders-game-description {
+  color: $white;
+  font-family: 'Ovo', serif;
+  font-size: 1.5rem;
+}
