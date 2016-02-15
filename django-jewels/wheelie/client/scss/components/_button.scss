@@ -21,6 +21,10 @@
     width: 90%;
     z-index: 10;
   }
+
+  &:visited {
+    color: inherit;
+  }
 }
 
 .orders-button-cornice {
