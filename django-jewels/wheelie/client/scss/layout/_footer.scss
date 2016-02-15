@@ -1,0 +1,18 @@
+.footer {
+  background-color: #444;
+  padding: 2em 0;
+  text-align: center;
+
+  & > * {
+    margin: 29px auto 0;
+  }
+}
+
+.footer-social-link,
+.footer-copyright-link {
+  color: #67c277;
+}
+
+.footer-copyright {
+  color: $white;
+}
