@@ -1,5 +1,5 @@
 .newsletter {
-  background-color: #222;
+  background-color: $mine-shaft;
   text-align: center;
 }
 
@@ -19,13 +19,13 @@
 }
 
 .newsletter-box-form-input {
-  border: 2px solid #444;
+  border: 2px solid $tundora;
   height: 37px;
   padding: 0 7px;
   width: 350px;
 
   &::placeholder {
-    color: #ccc;
+    color: $silver;
   }
 }
 

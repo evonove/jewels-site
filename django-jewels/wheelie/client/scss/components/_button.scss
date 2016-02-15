@@ -7,7 +7,7 @@
 
   // when adding a button, fill the 'content' value with the right text-link. Use the generic 'button' selector, along with the specific button selector
   &::after {
-    background-color: #67c277;
+    background-color: $fern;
     content: '';
     font: $text-button 'Le Grimoire du Bonheur', sans-serif;
     height: 70%;
@@ -31,7 +31,7 @@
 // Form button
 .form-button {
   background-color: #444;
-  color: #67c277;
+  color: $fern;
   cursor: pointer;
   display: block;
   font: 1.5rem 'Le Grimoire du Bonheur', serif;
