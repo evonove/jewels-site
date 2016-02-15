@@ -1,4 +1,4 @@
-// Button
+// Generic button
 .button {
   display: block;
   position: relative;
@@ -26,4 +26,16 @@
   position: relative;
   width: 100%;
   z-index: 30;
+}
+
+// Form button
+.form-button {
+  background-color: #444;
+  color: #67c277;
+  cursor: pointer;
+  display: block;
+  font: 1.5rem 'Le Grimoire du Bonheur', serif;
+  letter-spacing: 1px;
+  padding: 17px 0 13px;
+  width: 150px;
 }
