@@ -1,8 +1,16 @@
 .orders {
   background: radial-gradient($merlot, $heath);
-  padding: 10em 0;
+  box-sizing: border-box;
+  padding: 10em 5%;
   text-align: center;
 
+  @media #{$medium-port} {
+    padding: 5em 0;
+  }
+
+  @media #{$small-port} {
+    padding: 4em 0;
+  }
 }
 
 .button.orders-game-button::after {
@@ -16,10 +24,4 @@
   & > * {
     margin: 29px auto 0;
   }
-}
-
-.orders-game-description {
-  color: $white;
-  font-family: 'Ovo', serif;
-  font-size: 1.5rem;
 }
