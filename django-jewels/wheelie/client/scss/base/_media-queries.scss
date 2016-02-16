@@ -1,0 +1,10 @@
+// Breakpoints
+// -----------
+
+$extra-large: "only screen and (min-width: 1350px)";
+$large: "only screen and (min-width: 1025px) and (max-width: 1350px)";
+$medium-port: "only screen and (min-width: 530px) and (max-width: 1024px)";
+$small-port: "only screen and (max-width: 529px)";
+
+$medium-land: "only screen and (min-height: 530px) and (max-height: 1024px) and (orientation: landscape)";
+$small-land: "only screen and (max-height: 529px) and (orientation: landscape)";
