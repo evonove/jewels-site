@@ -11,6 +11,7 @@
   width: 100%;
 }
 
+// Logo
 .splash-illustration-logo {
   z-index: $z-logo;
 
@@ -21,8 +22,22 @@
   .no-webp & {
     background: url("../images/logo@x2.png") no-repeat 35% 20% / 30% auto;
   }
+
+  .webp &,
+  .no-webp & {
+    @media #{$medium-port} {
+      background-position: 15% 10%;
+      background-size: 50% auto;
+    }
+
+    @media #{$small-port} {
+      background-position: 15% 10%;
+      background-size: 75% auto;
+    }
+  }
 }
 
+// Carnivourus plant
 .splash-illustration-plant {
   z-index: $z-plant;
 
@@ -33,20 +48,53 @@
   .no-webp & {
     background: url("../images/plant@x2.png") no-repeat 5% 110% / auto 60%;
   }
+
+  .webp &,
+  .no-webp & {
+    @media #{$medium-port} {
+      background-size: 50% auto;
+    }
+
+    @media #{$small-port} {
+      background-position: 5% 100%;
+      background-size: 50vw auto;
+    }
+
+    @media #{$small-land}, #{$medium-land} {
+      background-size: auto 50%;
+    }
+  }
 }
 
+// Hill
 .splash-illustration-hill {
   z-index: $z-hill;
 
   .webp & {
-    background: url("../images/hill@x2.webp") no-repeat 100% 50% / 100% auto;
+    background: url("../images/hill@x2.webp") no-repeat 100% 100% / 100% auto;
   }
 
   .no-webp & {
-    background: url("../images/hill@x2.png") no-repeat 100% 50% / 100% auto;
+    background: url("../images/hill@x2.png") no-repeat 100% 100% / 100% auto;
+  }
+
+  .webp &,
+  .no-webp & {
+    @media #{$extra-large} {
+      background-position: 100% 50%;
+    }
+
+    @media #{$medium-land} {
+      background-position: 100% 50%;
+    }
+
+    @media #{$small-land} {
+      background-position: 100% 75%;
+    }
   }
 }
 
+// Goblin
 .splash-illustration-goblin {
   z-index: $z-goblin;
 
@@ -57,8 +105,28 @@
   .no-webp & {
     background: url("../images/goblin@x2.png") no-repeat 100% 33vh / 22% auto;
   }
+
+  .webp &,
+  .no-webp & {
+    @media #{$large}, #{$medium-land} {
+      background-position: 100% 70%;
+    }
+
+    @media #{$medium-port} {
+      background-position: 100% 80%;
+    }
+
+    @media #{$small-port} {
+      background-position: 100% 87%;
+    }
+
+    @media #{$small-land} {
+      background-position: 100% 50%;
+    }
+  }
 }
 
+// Foreground clouds
 .splash-illustration-foreground-cloud-first {
   z-index: $z-fg-cloud;
 
@@ -83,18 +151,33 @@
   }
 }
 
+
+// Castle
 .splash-illustration-castle {
   z-index: $z-castle;
 
   .webp & {
-    background: url("../images/castle@x2.webp") no-repeat 59vw 5vh / auto 100%;
+    background: url("../images/castle@x2.webp") no-repeat 84% 5vh / auto 100%;
   }
 
   .no-webp & {
-    background: url("../images/castle@x2.png") no-repeat 59vw 5vh / auto 100%;
+    background: url("../images/castle@x2.png") no-repeat 84% 5vh / auto 100%;
+  }
+
+  .webp &,
+  .no-webp & {
+    @media #{$medium-port} {
+      background-position: 84% 100%;
+      background-size: auto 100vw;
+    }
+
+    @media #{$small-land}, #{$medium-land} {
+      background-size: auto 100vh;
+    }
   }
 }
 
+// Background clouds
 .splash-illustration-background-cloud-third {
   z-index: $z-bg-cloud;
 
