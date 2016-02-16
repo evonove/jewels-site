@@ -2,11 +2,16 @@
 // ---------
 
 // Font-sizes
-$h1: 6.552rem;
-$h2: 4.368rem;
-$h3: 2.912rem;
-
+$h1: 6.552rem 'Le Grimoire du Bonheur', sans-serif;
+$h2: 4.368rem 'Le Grimoire du Bonheur', sans-serif;
+$h3: 2.912rem 'Le Grimoire du Bonheur', sans-serif;
+$p: 1.5rem / 1.5 'Ovo', serif;
 $text-button: 2.25rem;
+
+$h1-mobile: 22.5vw;
+$h2-mobile: 15vw;
+$h3-mobile: 10vw;
+$p-mobile: 6.67vw;
 
 // Z-indexes
 $z-logo: 1000;
