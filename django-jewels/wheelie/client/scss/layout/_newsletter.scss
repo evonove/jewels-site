@@ -4,10 +4,16 @@
 }
 
 .newsletter-gems {
-  background: url("../images/gems@x2.jpg") repeat center;
-  background-size: 90% auto;
   width: 100%;
   height: 500px;
+
+  .webp & {
+    background: url("../images/gems@x2.webp") repeat center / 90% auto;
+  }
+
+  .no-webp & {
+    background: url("../images/gems@x2.jpg") repeat center / 90% auto;
+  }
 }
 
 .newsletter-box {

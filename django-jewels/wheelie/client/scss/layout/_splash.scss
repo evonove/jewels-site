@@ -12,56 +12,121 @@
 }
 
 .splash-illustration-logo {
-  background: url("../images/logo@x2.png") no-repeat 35% 20%;
-  background-size: 30% auto;
   z-index: $z-logo;
+
+  .webp & {
+    background: url("../images/logo@x2.webp") no-repeat 35% 20% / 30% auto;
+  }
+
+  .no-webp & {
+    background: url("../images/logo@x2.png") no-repeat 35% 20% / 30% auto;
+  }
 }
 
 .splash-illustration-plant {
-  background: url("../images/plant@x2.png") no-repeat 5% 110%;
-  background-size: auto 60%;
   z-index: $z-plant;
+
+  .webp & {
+    background: url("../images/plant@x2.webp") no-repeat 5% 110% / auto 60%;
+  }
+
+  .no-webp & {
+    background: url("../images/plant@x2.png") no-repeat 5% 110% / auto 60%;
+  }
 }
 
 .splash-illustration-hill {
-  background: url("../images/hill@x2.png") no-repeat 100% 50%;
-  background-size: 100% auto;
   z-index: $z-hill;
+
+  .webp & {
+    background: url("../images/hill@x2.webp") no-repeat 100% 50% / 100% auto;
+  }
+
+  .no-webp & {
+    background: url("../images/hill@x2.png") no-repeat 100% 50% / 100% auto;
+  }
 }
 
 .splash-illustration-goblin {
-  background: url("../images/goblin@x2.png") no-repeat 100% 33vh;
-  background-size: 22% auto;
   z-index: $z-goblin;
+
+  .webp & {
+    background: url("../images/goblin@x2.webp") no-repeat 100% 33vh / 22% auto;
+  }
+
+  .no-webp & {
+    background: url("../images/goblin@x2.png") no-repeat 100% 33vh / 22% auto;
+  }
 }
 
 .splash-illustration-foreground-cloud-first {
-  background: url("../images/cloud4@x2.png") no-repeat 70% 65vh;
   z-index: $z-fg-cloud;
+
+  .webp & {
+    background: url("../images/cloud4@x2.webp") no-repeat 70% 65vh;
+  }
+
+  .no-webp & {
+    background: url("../images/cloud4@x2.png") no-repeat 70% 65vh;
+  }
 }
 
 .splash-illustration-foreground-cloud-second {
-  background: url("../images/cloud5@x2.png") no-repeat 55% 55vh;
   z-index: $z-fg-cloud;
+
+  .webp & {
+    background: url("../images/cloud5@x2.webp") no-repeat 55% 55vh;
+  }
+
+  .no-webp & {
+    background: url("../images/cloud5@x2.png") no-repeat 55% 55vh;
+  }
 }
 
 .splash-illustration-castle {
-  background: url("../images/castle@x2.png") no-repeat 59vw 5vh;
-  background-size: auto 100%;
   z-index: $z-castle;
+
+  .webp & {
+    background: url("../images/castle@x2.webp") no-repeat 59vw 5vh / auto 100%;
+  }
+
+  .no-webp & {
+    background: url("../images/castle@x2.png") no-repeat 59vw 5vh / auto 100%;
+  }
 }
 
 .splash-illustration-background-cloud-third {
-  background: url("../images/cloud1@x2.png") no-repeat 90% 10vh;
   z-index: $z-bg-cloud;
+
+  .webp & {
+    background: url("../images/cloud1@x2.webp") no-repeat 90% 10vh;
+  }
+
+  .no-webp & {
+    background: url("../images/cloud1@x2.png") no-repeat 90% 10vh;
+  }
 }
 
 .splash-illustration-background-cloud-fourth {
-  background: url("../images/cloud2@x2.png") no-repeat 15% 48vh;
   z-index: $z-bg-cloud;
+
+  .webp & {
+    background: url("../images/cloud2@x2.webp") no-repeat 15% 48vh;
+  }
+
+  .no-webp & {
+    background: url("../images/cloud2@x2.png") no-repeat 15% 48vh;
+  }
 }
 
 .splash-illustration-background-cloud-fifth {
-  background: url("../images/cloud3@x2.png") no-repeat 30% 13vh;
   z-index: $z-bg-cloud;
+
+  .webp & {
+    background: url("../images/cloud3@x2.webp") no-repeat 30% 13vh;
+  }
+
+  .no-webp & {
+    background: url("../images/cloud3@x2.png") no-repeat 30% 13vh;
+  }
 }
