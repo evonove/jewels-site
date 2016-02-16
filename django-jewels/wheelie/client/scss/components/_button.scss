@@ -12,7 +12,7 @@
     content: '';
     font: $text-button 'Le Grimoire du Bonheur', sans-serif;
     height: 70%;
-    // line-height value should be the same of the height plus 10, and in pixel. These extra 10 pixels are needed to fix the extra space occupied by 'Le Grimoire du Bonheur' font.
+    // line-height value should be the same of the height plus 10, and in pixel. These extra 10 pixels are needed to fix the extra space occupied by 'Le Grimoire du Bonheur' font on desktop devices.
     line-height: 80px;
     left: 50%;
     position: absolute;
@@ -20,10 +20,22 @@
     transform: translate(-50%, -50%);
     width: 90%;
     z-index: 10;
+
+    @media #{$medium-port} {
+      line-height: 70px;
+    }
+
+    @media #{$small-port} {
+      line-height: 60px;
+    }
   }
 
   &:visited {
     color: inherit;
+  }
+
+  @media #{$small-port} {
+    width: 250px;
   }
 }
 
@@ -44,4 +56,8 @@
   letter-spacing: 1px;
   padding: 17px 0 13px;
   width: 150px;
+
+  @media #{$small-port}, #{$medium-port} {
+    padding: 14px 0 16px;
+  }
 }
