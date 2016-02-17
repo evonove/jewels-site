@@ -1,6 +1,7 @@
 .splash {
   background: linear-gradient($sinbad, $conch);
   height: 100vh;
+  overflow: hidden;
   position: relative;
 }
 
@@ -16,11 +17,11 @@
   z-index: $z-logo;
 
   .webp & {
-    background: url("../images/logo@x2.webp") no-repeat 35% 20% / 30% auto;
+    background: url("../images/logo@x2.webp") no-repeat 35% 20% / 35% auto;
   }
 
   .no-webp & {
-    background: url("../images/logo@x2.png") no-repeat 35% 20% / 30% auto;
+    background: url("../images/logo@x2.png") no-repeat 35% 20% / 35% auto;
   }
 
   .webp &,
@@ -42,15 +43,18 @@
   z-index: $z-plant;
 
   .webp & {
-    background: url("../images/plant@x2.webp") no-repeat 5% 110% / auto 60%;
+    background: url("../images/plant@x2.webp") no-repeat 5% 100% / auto 60%;
   }
 
   .no-webp & {
-    background: url("../images/plant@x2.png") no-repeat 5% 110% / auto 60%;
+    background: url("../images/plant@x2.png") no-repeat 5% 100% / auto 60%;
   }
 
   .webp &,
   .no-webp & {
+    @media #{$extra-large} {
+      bottom: -20%;
+    }
     @media #{$medium-port} {
       background-size: 50% auto;
     }
@@ -81,15 +85,36 @@
   .webp &,
   .no-webp & {
     @media #{$extra-large} {
-      background-position: 100% 50%;
-    }
-
-    @media #{$medium-land} {
-      background-position: 100% 50%;
+      bottom: -23%;
+      height: 150vh;
     }
 
     @media #{$small-land} {
       background-position: 100% 75%;
+    }
+  }
+}
+
+.splash-illustration-background-hill {
+  display: none;
+  filter: brightness(0.8);
+  right: 10%;
+  transform: scaleX(-1);
+  z-index: 750;
+  width: 30%;
+
+  .webp & {
+    background: url("../images/hill@x2.webp") no-repeat 35% 115% / 150%;
+  }
+
+  .no-webp & {
+    background: url("../images/hill@x2.png") no-repeat 35% 115% / 150%;
+  }
+
+  .webp &,
+  .no-webp & {
+    @media #{$extra-large} {
+      display: block;
     }
   }
 }
@@ -127,9 +152,19 @@
 }
 
 // Foreground clouds
-.splash-illustration-foreground-cloud-first {
+.splash-illustration-foreground-clouds {
   z-index: $z-fg-cloud;
 
+  // All clouds should have these declarations
+  & > * {
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.splash-illustration-foreground-clouds-first {
   .webp & {
     background: url("../images/cloud4@x2.webp") no-repeat 90% 25vh / 17%;
   }
@@ -139,9 +174,7 @@
   }
 }
 
-.splash-illustration-foreground-cloud-second {
-  z-index: $z-fg-cloud;
-
+.splash-illustration-foreground-clouds-second {
   .webp & {
     background: url("../images/cloud5@x2.webp") no-repeat 70% 5vh / 20%;
   }
@@ -178,9 +211,18 @@
 }
 
 // Background clouds
-.splash-illustration-background-cloud-third {
+.splash-illustration-background-clouds {
   z-index: $z-bg-cloud;
 
+  // All clouds should have these declarations
+  & > * {
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+}
+.splash-illustration-background-clouds-third {
   .webp & {
     background: url("../images/cloud1@x2.webp") no-repeat 30% 5vh / 46%;
   }
@@ -190,9 +232,7 @@
   }
 }
 
-.splash-illustration-background-cloud-fourth {
-  z-index: $z-bg-cloud;
-
+.splash-illustration-background-clouds-fourth {
   .webp & {
     background: url("../images/cloud2@x2.webp") no-repeat 10% 42vh / 38%;
   }
@@ -202,9 +242,7 @@
   }
 }
 
-.splash-illustration-background-cloud-fifth {
-  z-index: $z-bg-cloud;
-
+.splash-illustration-background-clouds-fifth {
   .webp & {
     background: url("../images/cloud3@x2.webp") no-repeat 85% 55vh / 44%;
   }
