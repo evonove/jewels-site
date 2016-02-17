@@ -131,11 +131,11 @@
   z-index: $z-fg-cloud;
 
   .webp & {
-    background: url("../images/cloud4@x2.webp") no-repeat 90% 25vh;
+    background: url("../images/cloud4@x2.webp") no-repeat 90% 25vh / 17%;
   }
 
   .no-webp & {
-    background: url("../images/cloud4@x2.png") no-repeat 90% 25vh;
+    background: url("../images/cloud4@x2.png") no-repeat 90% 25vh / 17%;
   }
 }
 
@@ -143,11 +143,11 @@
   z-index: $z-fg-cloud;
 
   .webp & {
-    background: url("../images/cloud5@x2.webp") no-repeat 70% 5vh;
+    background: url("../images/cloud5@x2.webp") no-repeat 70% 5vh / 20%;
   }
 
   .no-webp & {
-    background: url("../images/cloud5@x2.png") no-repeat 70% 5vh;
+    background: url("../images/cloud5@x2.png") no-repeat 70% 5vh / 20%;
   }
 }
 
@@ -182,11 +182,11 @@
   z-index: $z-bg-cloud;
 
   .webp & {
-    background: url("../images/cloud1@x2.webp") no-repeat 30% 5vh;
+    background: url("../images/cloud1@x2.webp") no-repeat 30% 5vh / 46%;
   }
 
   .no-webp & {
-    background: url("../images/cloud1@x2.png") no-repeat 30% 5vh;
+    background: url("../images/cloud1@x2.png") no-repeat 30% 5vh / 46%;
   }
 }
 
@@ -194,11 +194,11 @@
   z-index: $z-bg-cloud;
 
   .webp & {
-    background: url("../images/cloud2@x2.webp") no-repeat 10% 42vh;
+    background: url("../images/cloud2@x2.webp") no-repeat 10% 42vh / 38%;
   }
 
   .no-webp & {
-    background: url("../images/cloud2@x2.png") no-repeat 10% 42vh;
+    background: url("../images/cloud2@x2.png") no-repeat 10% 42vh  / 38%;
   }
 }
 
@@ -206,10 +206,10 @@
   z-index: $z-bg-cloud;
 
   .webp & {
-    background: url("../images/cloud3@x2.webp") no-repeat 85% 55vh;
+    background: url("../images/cloud3@x2.webp") no-repeat 85% 55vh / 44%;
   }
 
   .no-webp & {
-    background: url("../images/cloud3@x2.png") no-repeat 85% 55vh;
+    background: url("../images/cloud3@x2.png") no-repeat 85% 55vh / 44%;
   }
 }
