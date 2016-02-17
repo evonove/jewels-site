@@ -1,5 +1,6 @@
 // Generic button
 .button {
+  color: inherit;
   cursor: pointer;
   display: block;
   position: relative;
@@ -30,6 +31,8 @@
     }
   }
 
+  &:hover,
+  &:focus,
   &:visited {
     color: inherit;
   }
