@@ -9,18 +9,21 @@ $(document).ready(function() {
     var logo = $('.splash-illustration-logo');
     var bgclouds = $('.splash-illustration-background-clouds');
 
+    var desktop = $(window).width() > 1350;
 
-    $(window).scroll(function() {
-        var scrolled = $(window).scrollTop();
+    if(desktop) {
+        $(window).scroll(function() {
+            var scrolled = $(window).scrollTop();
 
-        parallax(plant, scrolled, -0.2);
-        parallax(goblin, scrolled, 0.162);
-        parallax(fgclouds, scrolled, 0.262);
-        parallax(castle, scrolled, 0.424);
-        parallax(bgclouds, scrolled, 0.685);
-        parallax(logo, scrolled, 0.424);
-        parallax(bghill, scrolled, 0.1, -1);
-    });
+            parallax(plant, scrolled, -0.2);
+            parallax(goblin, scrolled, 0.162);
+            parallax(fgclouds, scrolled, 0.262);
+            parallax(castle, scrolled, 0.424);
+            parallax(bgclouds, scrolled, 0.685);
+            parallax(logo, scrolled, 0.424);
+            parallax(bghill, scrolled, 0.1, -1);
+        });
+    }
 
     function parallax(div, scrolled, ratio, scaleX) {
         //assign a default value of 1 to the scaleX property
