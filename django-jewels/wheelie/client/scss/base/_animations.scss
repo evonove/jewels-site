@@ -1,0 +1,161 @@
+// Clouds
+
+@keyframes fg-cloud-top {
+  0% {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  49.98% {
+    transform: translate3d(-70%, 0, 0);
+    visibility: visible;
+  }
+
+  49.99% {
+    transform: translate3d(-70%, 0, 0);
+    visibility: hidden;
+  }
+
+  50% {
+    transform: translate3d(50%, 0, 0);
+    visibility: hidden;
+  }
+
+  50.01% {
+    transform: translate3d(50%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+}
+
+@keyframes fg-cloud-bottom {
+  0% {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  49.98% {
+    transform: translate3d(-87%, 0, 0);
+    visibility: visible;
+  }
+
+  49.99% {
+    transform: translate3d(-87%, 0, 0);
+    visibility: hidden;
+  }
+
+  50% {
+    transform: translate3d(26%, 0, 0);
+    visibility: hidden;
+  }
+
+  50.01% {
+    transform: translate3d(26%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+}
+
+@keyframes bg-cloud-top {
+  0% {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  49.98% {
+    transform: translate3d(-70%, 0, 0);
+    visibility: visible;
+  }
+
+  49.99% {
+    transform: translate3d(-70%, 0, 0);
+    visibility: hidden;
+  }
+
+  50% {
+    transform: translate3d(90%, 0, 0);
+    visibility: hidden;
+  }
+
+  50.01% {
+    transform: translate3d(90%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+}
+
+@keyframes bg-cloud-middle {
+  0% {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  49.98% {
+    transform: translate3d(-30%, 0, 0);
+    visibility: visible;
+  }
+
+  49.99% {
+    transform: translate3d(-30%, 0, 0);
+    visibility: hidden;
+  }
+
+  50% {
+    transform: translate3d(105%, 0, 0);
+    visibility: hidden;
+  }
+
+  50.01% {
+    transform: translate3d(105%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+}
+
+@keyframes bg-cloud-bottom {
+  0% {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  49.98% {
+    transform: translate3d(-75%, 0, 0);
+    visibility: visible;
+  }
+
+  49.99% {
+    transform: translate3d(-75%, 0, 0);
+    visibility: hidden;
+  }
+
+  50% {
+    transform: translate3d(35%, 0, 0);
+    visibility: hidden;
+  }
+
+  50.01% {
+    transform: translate3d(35%, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+}
