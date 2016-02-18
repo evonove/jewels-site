@@ -165,7 +165,7 @@
 }
 
 .splash-illustration-foreground-clouds-top {
-  animation: fg-cloud-top 130s linear infinite;
+  animation: fg-cloud-top 120s linear infinite;
 
   .webp & {
     background: url("../images/cloud5@x2.webp") no-repeat 70% 5vh / 20%;
@@ -177,7 +177,7 @@
 }
 
 .splash-illustration-foreground-clouds-bottom {
-  animation: fg-cloud-top 160s linear infinite;
+  animation: fg-cloud-bottom 190s linear infinite;
 
   .webp & {
     background: url("../images/cloud4@x2.webp") no-repeat 90% 25vh / 17%;
@@ -227,7 +227,7 @@
   }
 }
 .splash-illustration-background-clouds-top {
-  animation: bg-cloud-top 260s linear infinite;
+  animation: bg-cloud-top 280s linear infinite;
 
   .webp & {
     background: url("../images/cloud1@x2.webp") no-repeat 30% 5vh / 46%;
@@ -239,7 +239,7 @@
 }
 
 .splash-illustration-background-clouds-middle {
-  animation: bg-cloud-top 190s linear infinite;
+  animation: bg-cloud-middle 160s linear infinite;
 
   .webp & {
     background: url("../images/cloud2@x2.webp") no-repeat 10% 42vh / 38%;
