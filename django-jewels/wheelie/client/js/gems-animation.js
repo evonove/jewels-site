@@ -9,7 +9,7 @@ $(document).ready(function() {
             var scrolled = $(window).scrollTop();
             gems.css({
                 'background-position-x': (scrolled*0.1)+'%'
-            })
+            });
         });
     }
 

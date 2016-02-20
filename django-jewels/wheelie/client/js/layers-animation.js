@@ -31,7 +31,7 @@ $(document).ready(function() {
 
         div.css({
             'transform': 'scaleX('+scaleX +') translate3d(0,'+(scrolled*ratio)+'px, 0)'
-        })
+        });
     }
 
 });
