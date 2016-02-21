@@ -8,6 +8,7 @@ $(document).ready(function() {
     var fgclouds = $('.splash-illustration-foreground-clouds');
     var logo = $('.splash-illustration-logo');
     var bgclouds = $('.splash-illustration-background-clouds');
+    var textscroll = $('.splash-scroll');
 
     var desktop = $(window).width() > 1350;
 
@@ -22,6 +23,7 @@ $(document).ready(function() {
             parallax(bgclouds, scrolled, 0.685);
             parallax(logo, scrolled, 0.424);
             parallax(bghill, scrolled, 0.1, -1);
+            parallax(textscroll, scrolled, 0.5);
         });
     }
 
