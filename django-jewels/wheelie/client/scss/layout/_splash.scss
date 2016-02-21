@@ -100,7 +100,7 @@
   filter: brightness(0.8);
   right: 10%;
   transform: scaleX(-1);
-  z-index: 750;
+  z-index: $z-bg-hill;
   width: 30%;
 
   .webp & {
