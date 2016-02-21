@@ -16,7 +16,6 @@ var vendors = [
 ];
 
 var scripts = [
-    'app.js',
     'layers-animation.js',
     'gems-animation.js',
     'svg-injections.js'
