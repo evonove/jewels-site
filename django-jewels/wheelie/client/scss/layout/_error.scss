@@ -1,0 +1,71 @@
+.error {
+  height: 100vh;
+
+  .webp & {
+    background: url("../images/dragon@x2.webp") no-repeat 35% 100% / 35vw auto, radial-gradient($walnut, $graphite);
+  }
+
+  .no-webp & {
+    background: url("../images/dragon@x2.png") no-repeat 35% 100% / 35vw auto, radial-gradient($walnut, $graphite);
+  }
+
+  .webp &,
+  .no-webp & {
+    @media #{$medium-port} {
+      background-size: 80vw auto;
+    }
+
+    @media #{$small-port} {
+      background-size: 90vw auto;
+    }
+  }
+}
+
+.error-logo {
+  height: 100%;
+  left: 1.5%;
+  position: absolute;
+  top: 2.25%;
+  width: 12.5%;
+
+  .webp & {
+    background: url("../images/logo@x2.webp") no-repeat 0 0 / 100%;
+  }
+
+  .no-webp & {
+    background: url("../images/logo@x2.png") no-repeat 0 0 / 100%;
+  }
+
+  @media #{$medium-port} {
+    width: 22.5%;
+  }
+
+  @media #{$small-port} {
+    width: 35%;
+  }
+}
+
+.error-message {
+  left: 50vw;
+  position: relative;
+  top: 50%;
+  width: 40vw;
+
+  @media #{$medium-port} {
+    width: 50vw;
+  }
+
+  @media #{$small-port} {
+    left: 0;
+    margin: auto;
+    width: 90vw;
+  }
+}
+
+.error-message-text {
+  line-height: 1.25;
+}
+
+.error-message-text-link {
+  color: $fern;
+}
