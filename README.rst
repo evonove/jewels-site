@@ -2,10 +2,10 @@
 Jewels website
 ==============
 
-`jewels.game`_ website, made with `Wagtail`_!
+`jewelsthegame.com`_ website, made with `Wagtail`_!
 
-.. _jewels.game: https://jewels.game/
-.. _Wagtail: https://wagtail.io/
+.. _jewels.game: https://jewelsthegame.com
+.. _Wagtail: https://wagtail.io
 
 
 Getting started
@@ -16,20 +16,16 @@ Running this website requires the following backend services up and running:
 * Redis
 * PostgreSQL
 
-If your database is running via ``docker-compose`` and the binding *address:port* is exposed to
-the host, you should execute the commands below so that a default user and database are created. Just:
+You may run these services using ``docker-compose`` as::
 
-.. code-block:: bash
+    $ docker-compose up
 
-    $ docker exec -ti jewelssite_db_1 su -c "createuser devel -P --createdb" postgres
-    $ docker exec -ti jewelssite_db_1 su -c "createdb jewels -O devel" postgres
+``docker-compose.yml`` is used for development purposes only.
 
 Populate the database
 ~~~~~~~~~~~~~~~~~~~~~
 
-From the ``django-website`` folder, launch:
-
-.. code-block:: bash
+From the ``django-website`` folder, launch::
 
     $ python manage.py migrate
     $ python manage.py createsuperuser
@@ -93,8 +89,6 @@ Running on production
 ---------------------
 
 The service may be wrapped using NewRelic. In this case, launch the application server with the
-following command:
-
-.. code-block:: bash
+following command::
 
     $ newrelic-admin run-program uwsgi
