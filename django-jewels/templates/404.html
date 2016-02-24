@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
-{% load static from staticfiles %}
+{% load wagtailcore_tags %}
+
 
 {% block body_class %}{% endblock %}
 
@@ -9,7 +10,7 @@
         <div class="error-logo"></div>
         <div class="error-message">
             <h1>404!</h1>
-            <h3 class="error-message-text">Oh oh... It seems that the Dragon has found you... Click <a class="error-message-text-link" href="#">here</a> to escape!</h3>
+            <h3 class="error-message-text">Oh oh... It seems that the Dragon has found you... Click <a class="error-message-text-link" href="{% slugurl 'home' %}">here</a> to escape!</h3>
         </div>
     </div>
 {% endblock %}
