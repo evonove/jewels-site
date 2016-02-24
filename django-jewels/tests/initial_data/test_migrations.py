@@ -17,6 +17,6 @@ def test_initial_data():
     """
     default_homepage = Page.objects.filter(id=2)
     homepage = HomePage.objects.filter(slug='home')
- 
+
     assert default_homepage.count() == 0
     assert homepage.count() == 1
