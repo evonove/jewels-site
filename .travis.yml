@@ -1,0 +1,27 @@
+sudo: required
+
+language: python
+python:
+  - "3.5"
+
+env:
+  global:
+    - DATABASE_URL="postgres://postgres:@127.0.0.1:5432/jewels"
+  matrix:
+    - PSQL_VERSION=9.5.1 REDIS_VERSION=3.0.7
+
+services:
+  - docker
+
+before_install:
+  - sudo /etc/init.d/postgresql stop
+  - docker pull library/postgres:$PSQL_VERSION
+  - docker pull library/redis:$REDIS_VERSION
+  - docker run -d -p 127.0.0.1:5432:5432 library/postgres:$PSQL_VERSION
+  - docker run -d -p 127.0.0.1:6379:6379 library/redis:$REDIS_VERSION
+
+install:
+  - pip install tox
+
+script:
+  - tox -r
