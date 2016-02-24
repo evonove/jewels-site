@@ -22,8 +22,8 @@ var scripts = [
 ];
 
 wheelie.update('uglify', {
-  scripts: scripts,
-  vendors: vendors
+    scripts: scripts,
+    vendors: vendors
 });
 
 // the production and the live building, output processed files
