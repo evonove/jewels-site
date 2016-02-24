@@ -11,11 +11,11 @@ wheelie.setDefault('watch');
 // build customizations
 var vendors = [
     'jquery/dist/jquery.min.js',
-    'modernizr-webp.js',
     'svg-injector/dist/svg-injector.min.js'
 ];
 
 var scripts = [
+    'compatibility/modernizr-custom.js',
     'layers-animation.js',
     'gems-animation.js',
     'svg-injections.js'
