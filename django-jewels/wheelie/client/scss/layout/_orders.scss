@@ -13,15 +13,35 @@
   }
 }
 
-.button.orders-game-button::after {
-  content: 'Preorder';
-}
-
 .orders-game {
-  width: 75%;
+  width: 90%;
   margin: auto;
 
   & > * {
     margin: 29px auto 0;
   }
+}
+
+.orders-game-kickstarter {
+  display: inline-block;
+  position: relative;
+}
+
+.orders-game-kickstarter-heading {
+  display: inline-block;
+}
+
+.orders-game-kickstarter-badge {
+  margin-left: 10px;
+  position: relative;
+  top: 8px;
+  width: 75px;
+}
+
+.orders-game-order {
+  margin-top: 43px;
+}
+
+.button.orders-game-button::after {
+  content: 'Preorder';
 }
