@@ -2,9 +2,13 @@
 Jewels website
 ==============
 
+.. image:: https://travis-ci.org/evonove/jewels-site.svg?branch=master
+    :target: https://travis-ci.org/evonove/jewels-site
+
+
 `jewelsthegame.com`_ website, made with `Wagtail`_!
 
-.. _jewels.game: https://jewelsthegame.com
+.. _jewelsthegame.com: https://jewelsthegame.com
 .. _Wagtail: https://wagtail.io
 
 
