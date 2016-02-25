@@ -61,6 +61,9 @@ target/
 # IDE
 .idea/
 
+# OSX
+.DS_Store
+
 # Wheelie and Gulp toolchain
 node_modules/
 vendors/
