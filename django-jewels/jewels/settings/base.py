@@ -34,28 +34,24 @@ DEBUG = env('DJANGO_DEBUG', False)
 
 # apps and middleware
 INSTALLED_APPS = (
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-
-    'wagtail.wagtailforms',
+    'wagtail.contrib.wagtailsitemaps',
     'wagtail.wagtailredirects',
-    'wagtail.wagtailembeds',
     'wagtail.wagtailsites',
     'wagtail.wagtailusers',
-    'wagtail.wagtailsnippets',
-    'wagtail.wagtaildocs',
     'wagtail.wagtailimages',
-    'wagtail.wagtailsearch',
     'wagtail.wagtailadmin',
     'wagtail.wagtailcore',
 
     'modelcluster',
     'compressor',
     'taggit',
+
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
 
     'wheelie',
     'home',
