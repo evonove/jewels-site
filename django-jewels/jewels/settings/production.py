@@ -1,3 +1,5 @@
+import raven
+
 from .base import *
 
 
@@ -31,4 +33,13 @@ LOGGING['loggers'] = {
         'handlers': ['logstash', 'syslog'],
         'level': env('JEWELS_LOG_LEVEL', 'INFO'),
     },
+}
+
+# Sentry
+INSTALLED_APPS += (
+    'raven.contrib.django.raven_compat',
+)
+
+RAVEN_CONFIG = {
+    'dsn': env('SENTRY_DSN'),
 }
