@@ -87,6 +87,7 @@ Logging and monitoring
 * ``LOGSTASH_HOST`` (default: ``127.0.0.1``)
 * ``LOGSTASH_PORT`` (default: ``5000``)
 * ``NEW_RELIC_CONFIG_FILE``: sets the NewRelic configuration file ``newrelic.ini``
+* ``NEW_RELIC_LICENSE_KEY``: sets the NewRelic license key
 * ``SENTRY_DSN``: sets the ``DSN`` value, found in the Sentry setup page
 
 Running on production
