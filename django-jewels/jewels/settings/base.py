@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'wagtail.wagtailimages',
     'wagtail.wagtailadmin',
     'wagtail.wagtailcore',
+    'wagtail.contrib.settings',
 
     'modelcluster',
     'compressor',
@@ -54,6 +55,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'wheelie',
+    'options',
     'home',
 )
 
