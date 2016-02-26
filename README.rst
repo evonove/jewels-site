@@ -96,4 +96,4 @@ Running on production
 The service may be wrapped using NewRelic. In this case, launch the application server with the
 following command::
 
-    $ newrelic-admin run-program uwsgi
+    $ newrelic-admin run-program uwsgi uwsgi.ini
