@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    var gems = $('.newsletter-gems');
+    var gems = $('.gems');
 
     var desktop = $(window).width() > 1350;
 

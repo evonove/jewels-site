@@ -3,28 +3,6 @@
   text-align: center;
 }
 
-.newsletter-gems {
-  width: 100%;
-  padding-top: 500px;
-
-  .webp & {
-    background: url("../images/gems@x2.webp") repeat center / 90% auto;
-  }
-
-  .no-webp & {
-    background: url("../images/gems@x2.jpg") repeat center / 90% auto;
-  }
-
-  .webp &,
-  .no-webp & {
-
-    @media #{$small-port}, #{$medium-port} {
-      background-size: cover;
-      padding-top: 50%;
-    }
-  }
-}
-
 .newsletter-box {
   box-sizing: border-box;
   padding: 5em 5%;
