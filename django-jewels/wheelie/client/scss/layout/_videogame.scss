@@ -7,16 +7,28 @@
   text-align: center;
 }
 
-.videogame-text {
+.videogame-textbox {
+  position: relative;
+  z-index: 100;
+}
+
+.videogame-textbox-text {
   margin-top: 0.618em;
 }
 
 .videogame-preview {
-  position: absolute;
-  right: -5%;
-  transform: rotate(-5deg) translateY(-50%);
-  top: 50%;
+  margin: 1.618em auto -10em;
+  transform: rotate(-5deg);
   width: 30%;
+
+  @media #{$small-port}, #{$medium-port} {
+    width: 70%;
+    margin: 1.618em auto -8em;
+  }
+
+  @media #{$small-port} {
+    margin: 1.618em auto -7em;
+  }
 }
 
 .videogame-preview-cornice {
