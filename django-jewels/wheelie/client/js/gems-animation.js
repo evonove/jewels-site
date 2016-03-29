@@ -8,7 +8,7 @@ $(document).ready(function() {
         $(window).scroll(function() {
             var scrolled = $(window).scrollTop();
             gems.css({
-                'background-position-x': (scrolled*0.1)+'%'
+                'background-position-x': (scrolled*0.05)+'%'
             });
         });
     }

@@ -3,11 +3,11 @@
   padding-top: 500px;
 
   .webp & {
-    background: url("../images/gems@x2.webp") repeat center / 90% auto;
+    background: url("../images/gems@x2.webp") repeat center / auto;
   }
 
   .no-webp & {
-    background: url("../images/gems@x2.jpg") repeat center / 90% auto;
+    background: url("../images/gems@x2.jpg") repeat center / auto;
   }
 
   .webp &,
