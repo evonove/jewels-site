@@ -1,5 +1,5 @@
 .videogame {
-  background: radial-gradient(#59A867, #67c277);
+  background: radial-gradient($forest, $fern);
   box-sizing: border-box;
   overflow: hidden;
   padding: 5em 5%;
@@ -9,7 +9,7 @@
 
 .videogame-textbox {
   position: relative;
-  z-index: 100;
+  z-index: $z-videogame-text;
 }
 
 .videogame-textbox-text {
