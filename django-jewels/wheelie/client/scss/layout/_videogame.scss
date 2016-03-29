@@ -1,0 +1,29 @@
+.videogame {
+  background: radial-gradient(#59A867, #67c277);
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 5em 5%;
+  position: relative;
+  text-align: center;
+}
+
+.videogame-text {
+  margin-top: 0.618em;
+}
+
+.videogame-preview {
+  position: absolute;
+  right: -5%;
+  transform: rotate(-5deg) translateY(-50%);
+  top: 50%;
+  width: 30%;
+}
+
+.videogame-preview-cornice {
+  position: absolute;
+  width: 100%;
+}
+
+.videogame-preview-screenshot {
+  width: 100%;
+}
