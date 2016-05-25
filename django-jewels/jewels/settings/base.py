@@ -140,8 +140,8 @@ MEDIA_ROOT = os.path.join(ASSETS_ROOT, 'media')
 # emails
 DEFAULT_FROM_EMAIL = env('DJANGO_FROM_EMAIL')
 
-EMAIL_BACKEND_DEFAULT = 'django.core.mail.backends.console.EmailBackend'
-EMAIL_BACKEND = env('DJANGO_EMAIL_BACKEND', EMAIL_BACKEND_DEFAULT)
+DEFAULT_EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = env('DJANGO_EMAIL_BACKEND', DEFAULT_EMAIL_BACKEND)
 
 # logging
 LOGSTASH_HOST = env('LOGSTASH_HOST', '127.0.0.1')
