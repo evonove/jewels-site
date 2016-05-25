@@ -122,20 +122,15 @@ USE_L10N = True
 USE_TZ = True
 
 # static files and media
-STATICFILES_FINDERS = [
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'compressor.finders.CompressorFinder',
-]
-
-# static files and media
 ASSETS_ROOT = env('DJANGO_ASSETS_ROOT', BASE_DIR)
-STATIC_HOST = env('DJANGO_STATIC_HOST', '')
-
-STATIC_URL = STATIC_HOST + '/static/'
-MEDIA_URL = '/media/'
 STATIC_ROOT = os.path.join(ASSETS_ROOT, 'static')
 MEDIA_ROOT = os.path.join(ASSETS_ROOT, 'media')
+
+# using a CDN if available
+STATIC_HOST = os.environ.get('DJANGO_STATIC_HOST', '')
+MEDIA_HOST = os.environ.get('DJANGO_MEDIA_HOST', '')
+STATIC_URL = STATIC_HOST + '/static/'
+MEDIA_URL = MEDIA_HOST + '/media/'
 
 # emails
 DEFAULT_FROM_EMAIL = env('DJANGO_FROM_EMAIL')
