@@ -138,6 +138,10 @@ DEFAULT_FROM_EMAIL = env('DJANGO_FROM_EMAIL')
 DEFAULT_EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_BACKEND = env('DJANGO_EMAIL_BACKEND', DEFAULT_EMAIL_BACKEND)
 
+# WagTail specific
+WAGTAIL_SITE_NAME = 'Jewels'
+TAGGIT_CASE_INSENSITIVE = True
+
 # logging
 LOGSTASH_HOST = env('LOGSTASH_HOST', '127.0.0.1')
 LOGSTASH_PORT = env('LOGSTASH_PORT', 5000)
@@ -174,7 +178,3 @@ LOGGING = {
         },
     },
 }
-
-# WagTail specific
-WAGTAIL_SITE_NAME = 'Jewels'
-TAGGIT_CASE_INSENSITIVE = True
