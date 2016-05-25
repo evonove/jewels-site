@@ -26,9 +26,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-ALLOWED_HOSTS = [
-    env('DJANGO_ALLOWED_HOSTS'),
-]
+ALLOWED_HOSTS = env('DJANGO_ALLOWED_HOSTS', '').split(',')
 
 DEBUG = env('DJANGO_DEBUG', False)
 
