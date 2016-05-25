@@ -44,7 +44,6 @@ INSTALLED_APPS = (
     'wagtail.contrib.settings',
 
     'modelcluster',
-    'compressor',
     'taggit',
 
     'django.contrib.admin',
@@ -184,4 +183,3 @@ LOGGING = {
 # WagTail specific
 WAGTAIL_SITE_NAME = 'Jewels'
 TAGGIT_CASE_INSENSITIVE = True
-COMPRESS_OFFLINE = True
