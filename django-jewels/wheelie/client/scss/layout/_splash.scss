@@ -6,7 +6,7 @@
 }
 
 .splash-logo_tabula {
-  box-shadow: 2px 2px 2px $mine-shaft;
+  box-shadow: 1px 1px 2px $mine-shaft;
   display: inline-block;
   position: absolute;
   height: 69px;
@@ -21,7 +21,6 @@
   }
 
   @media #{$small-port} {
-    box-shadow: 1px 1px 2px $mine-shaft;
     height: 42px;
     left: auto;
     right: 1em;
