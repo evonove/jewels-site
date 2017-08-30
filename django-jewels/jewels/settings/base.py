@@ -32,7 +32,6 @@ DEBUG = env('DJANGO_DEBUG', False)
 
 # apps and middleware
 INSTALLED_APPS = (
-    'wagtail.contrib.wagtailsitemaps',
     'wagtail.wagtailredirects',
     'wagtail.wagtailsites',
     'wagtail.wagtailusers',
@@ -50,6 +49,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
 
     'wheelie',
     'options',
