@@ -5,7 +5,6 @@
 #    pip-compile --output-file requirements.txt requirements.in
 #
 apipkg==1.4               # via execnet
-appnope==0.1.0            # via ipython
 beautifulsoup4==4.6.0     # via wagtail
 certifi==2017.7.27.1      # via requests
 chardet==3.0.4            # via requests
@@ -30,10 +29,9 @@ ipython==6.1.0            # via ipdb
 jedi==0.10.2              # via ipython
 mccabe==0.6.1             # via flake8
 newrelic==2.90.0.75
-olefile==0.44             # via pillow
 pexpect==4.2.1            # via ipython
 pickleshare==0.7.4        # via ipython
-pillow==4.2.1             # via wagtail
+pillow==6.2.0             # via wagtail
 prompt-toolkit==1.0.15    # via ipython
 psycopg2==2.7.3.1
 ptyprocess==0.5.2         # via pexpect
